@@ -2,12 +2,14 @@
   "name": "@mm90849491/module-checker",
   "version": "0.0.3",
   "description": "check dependencies package-lock.json match ones in package.json",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/main.js",
+  "bin": "lib/main.js",
+  "types": "lib/main.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run prepare && node lib/main.js package.json",
+    "test": "npm start",
     "upgrade": "npx --yes npm-check-updates -u && npm install",
     "push": "npm run prepare && npm version patch && npm publish --access public"
   },
@@ -18,6 +20,7 @@
   "author": "Meng Meng <mm90849491@mm90849491.com>",
   "license": "GPL-3.0",
   "devDependencies": {
+    "@types/node": "^18.0.0",
     "eslint": "^8.18.0",
     "typescript": "^4.7.4"
   },
