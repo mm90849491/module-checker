@@ -1,0 +1,28 @@
+{
+  "name": "module-checker",
+  "version": "0.0.1",
+  "description": "check dependencies package-lock.json match ones in package.json",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upgrade": "npx --yes npm-check-updates -u && npm install",
+    "push": "npm run prepare && npm version patch && npm publish --access public"
+  },
+  "keywords": [
+    "TypeScript",
+    "NodeJS"
+  ],
+  "author": "Meng Meng <mm90849491@mm90849491.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "typescript": "^4.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mm90849491/module-checker.git"
+  }
+}
