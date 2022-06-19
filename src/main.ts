@@ -38,15 +38,25 @@ try {
     }
   });
   if (mismatchList.length > 0) {
-    console.warn('WARNING: following packages might be out of date');
+    console.warn(
+      '\x1b[33m' +
+        'WARNING: following packages might be out of date' +
+        '\x1b[0m'
+    );
     mismatchList.forEach((mismatch) => {
       console.log(
-        mismatch.module + ': \t' + mismatch.current + ' => ' + mismatch.target
+        mismatch.module +
+          ': \t' +
+          '\x1b[31m' +
+          mismatch.current +
+          '\x1b[0m' +
+          ' => ' +
+          mismatch.target
       );
     });
   }
 } catch (error) {
   console.log(error);
-  console.log('Have you run npm install?');
+  console.log('Have you run ' + '\x1b[34m' + 'npm install' + '\x1b[0m' + '?');
   process.exit(1);
 }
