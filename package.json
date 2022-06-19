@@ -1,5 +1,5 @@
 {
-  "name": "module-checker",
+  "name": "@mm90849491/module-checker",
   "version": "0.0.2",
   "description": "check dependencies package-lock.json match ones in package.json",
   "main": "lib/index.js",
@@ -24,5 +24,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mm90849491/module-checker.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
