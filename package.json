@@ -1,6 +1,6 @@
 {
   "name": "@mm90849491/module-checker",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "check dependencies package-lock.json match ones in package.json",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
