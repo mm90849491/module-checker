@@ -1,6 +1,6 @@
 {
   "name": "@mm90849491/module-checker",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "check dependencies package-lock.json match ones in package.json",
   "main": "lib/main.js",
   "bin": "lib/main.js",
